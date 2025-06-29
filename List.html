@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายการสินค้า</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "TH SarabunPSK", sans-serif;
+      background-color: #fbe6f6;
+    }
+
+    .banner {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      display: flex;
+    }
+
+      .leftbar {
+  width: 20%;
+  background-color: #f8bbd0;
+  padding: 20px;
+}
+
+.main {
+  width: 60%;
+  padding: 20px;
+  background-color: #fff0f5;
+}
+
+.rightbar {
+  width: 20%;
+  background-color: #f8bbd0;
+  padding: 20px;
+}
+    .sidebar {
+      width: 200px;
+      background-color: #f8bbd0;
+      padding: 20px;
+    }
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .sidebar button:hover {
+      background-color: #d81b60;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #e91e63;
+      margin: 20px 0;
+    }
+
+    img.profile {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #f8bbd0;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      color: #880e4f;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="BN.png" alt="แบนเนอร์แนะนำตัว" class="banner">
+
+  <div class="content">
+
+    <div class="sidebar">
+  <button onclick="location.href='Home.html'">หน้าแรก</button>
+  <button onclick="location.href='New.html'">สินค้าใหม่</button>
+  <button onclick="location.href='List.html'">รายการสินค้า</button>
+  <button onclick="location.href='Promo.html'">โปรโมชั่น</button>
+  <button onclick="location.href='Order.html'">Order</button>
+</div>
+
+    <div class="main">
+      <h1>Product List</h1>
+      <img src="PD1.png" alt="รูปแมว" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🖍️ 1. ปากกาไฮไลต์น่ารัก
+</h3>
+<button onclick="location.href='pd1.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ดีไซน์โดดเด่น 
+  <span style="color: rgb(93, 92, 92);"> : สีพาสเทลหัวแบน ใช้งานง่าย หัวไฮไลต์ลื่นไม่ซึมกระดาษ ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  เหมาะกับ
+  <span style="color: rgb(93, 92, 92);"> : จดสรุป วิชาการ หรือจดเลคเชอร์ให้ดูสดใส ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  พกไปไหนก็น่าใช้
+  <span style="color: rgb(93, 92, 92);"> : ดีไซน์น่ารัก ไม่เหมือนใคร ✨</span>
+</h4>
+
+
+      
+
+<br><br>
+<br><br>
+<img src="PD2.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  📔 2. สมุดน้องหมีสดใส
+</h3>
+<button onclick="location.href='pd2.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  หน้าปก
+  <span style="color: rgb(93, 92, 92);"> : ลายน้องหมีสุดคิ้วท์ พร้อมพื้นหลังสีพาสเทลละมุนตา ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  เนื้อใน
+  <span style="color: rgb(93, 92, 92);"> : กระดาษครีมถนอมสายตา เขียนลื่น ปากกาไม่ซึมทะลุ ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ขนาด
+  <span style="color: rgb(93, 92, 92);"> :  A5 พกพาสะดวก เหมาะกับนักเรียนและสายจด ✨</span>
+</h4>
+<br><br>
+
+
+<br><br>
+<img src="PD3.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🎨 3. เซตสีพาสเทล
+</h3>
+<button onclick="location.href='pd3.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ประกอบด้วย
+  <span style="color: rgb(93, 92, 92);"> : สีไม้ 12 แท่งในโทนพาสเทล ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  คุณภาพ
+  <span style="color: rgb(93, 92, 92);"> : สีชัด ลื่นมือ ระบายสนุกทุกหน้า ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  แพ็กเกจน่ารัก
+  <span style="color: rgb(93, 92, 92);"> : กล่องใสลายมุ้งมิ้ง ✨</span>
+</h4>
+<br><br>
+     
+
+<br><br>
+<img src="PD4.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🖌️ 4. สีน้ำ 12 สี
+</h3>
+<button onclick="location.href='pd4.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  สีสด
+  <span style="color: rgb(93, 92, 92);"> : ผสมง่าย แห้งไว ไม่เยิ้ม ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  มาพร้อมพู่กัน
+  <span style="color: rgb(93, 92, 92);"> : พร้อมใช้งานในกล่องเดียว ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+ เหมาะกับ
+  <span style="color: rgb(93, 92, 92);"> : งานวาดเล่น งานศิลป์ งานการบ้านก็เอาอยู่ ✨</span>
+</h4>
+<br><br>
+      
+
+<br><br>
+<img src="PD5.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🐾 5. ปากกาอุ้งเท้าแมว
+</h3>
+<button onclick="location.href='pd5.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ดีไซน์
+  <span style="color: rgb(93, 92, 92);"> : หัวปากกาเป็นอุ้งเท้าแมวนุ่มนิ่ม บีบแล้วเด้งดึ๋ง ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  เขียนดี
+  <span style="color: rgb(93, 92, 92);"> : หมึกน้ำมันแห้งไว สีเข้ม ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  สายแมวต้องมี ✨
+</h4>
+<br><br>
+      
+
+<br><br>
+<img src="PD6.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🧼 6. ยางลบพาสเทล
+</h3>
+<button onclick="location.href='pd6.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  นุ่มลบสะอาด
+  <span style="color: rgb(93, 92, 92);"> : ไม่เปื้อน ไม่ทิ้งคราบ ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  กลิ่นหอมอ่อนๆ
+  <span style="color: rgb(93, 92, 92);"> : ฟีลสดชื่นระหว่างลบ ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  มีให้เลือกหลายลาย
+  <span style="color: rgb(93, 92, 92);"> : หัวใจ ดาว น้องหมี ✨</span>
+</h4>
+<br><br>
+      
+
+<br><br>
+<img src="PD7.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  🐱 7. กบเหลาน้องแมว
+</h3>
+<button onclick="location.href='pd7.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ลายการ์ตูนน้องแมว
+  <span style="color: rgb(93, 92, 92);"> : หัวกบเปิด-ปิดได้ พกพาง่าย ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ใบมีดคม
+  <span style="color: rgb(93, 92, 92);"> : เหลาง่าย ดินสอไม่หัก ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  เด็กๆใช้งานปลอดภัย ✨
+</h4>
+<br><br>
+      
+
+<br><br>
+<img src="PD8.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  📏 8. ไม้บรรทัดลายสัตว์
+</h3>
+<button onclick="location.href='pd8.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ขนาด
+  <span style="color: rgb(93, 92, 92);"> : 15 ซม. ลายหมู หมา หมี นกเพนกวิน ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  วัสดุ
+  <span style="color: rgb(93, 92, 92);"> : พลาสติกใส คุณภาพดี ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  พกเรียนแล้วมีคนขอซื้อแน่ๆ ✨
+</h4>
+<br><br>
+      
+
+<br><br>
+<img src="PD9.png" alt="สมุด" style="width: 350px; height: auto;">
+      <h3 style="text-align: left; margin-left: 120px;">
+  ✏️ 9. ปากกาลบคำผิด
+</h3>
+<button onclick="location.href='pd9.html'">รายละเอียดสินค้า</button>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ดีไซน์
+  <span style="color: rgb(93, 92, 92);"> : แบบเทปใช้ง่าย ลื่นไม่มีสะดุด ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ลาย
+  <span style="color: rgb(93, 92, 92);"> : หมีแพนด้า ยูนิคอร์น หรือลายของหวาน ✨</span>
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  เหมาะกับทุกโต๊ะเรียน ✨
+</h4>
+<br><br>
+      
+
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <footer>
+    ติดต่อ: Study Sparle | Email: Study_Sparle@gmail.com | โทร: 065-081-8940
+  </footer>
+
+</body>
+</html>

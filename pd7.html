@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PD7</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "TH SarabunPSK", sans-serif;
+      background-color: #fbe6f6;
+    }
+
+    .banner {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      display: flex;
+    }
+
+      .leftbar {
+  width: 20%;
+  background-color: #f8bbd0;
+  padding: 20px;
+}
+
+.main {
+  width: 60%;
+  padding: 20px;
+  background-color: #fff0f5;
+}
+
+.rightbar {
+  width: 20%;
+  background-color: #f8bbd0;
+  padding: 20px;
+}
+    .sidebar {
+      width: 200px;
+      background-color: #f8bbd0;
+      padding: 20px;
+    }
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .sidebar button:hover {
+      background-color: #d81b60;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #e91e63;
+      margin: 20px 0;
+    }
+
+    img.profile {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #f8bbd0;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      color: #880e4f;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="BN.png" alt="แบนเนอร์แนะนำตัว" class="banner">
+
+  <div class="content">
+
+    <div class="sidebar">
+  <button onclick="location.href='Home.html'">หน้าแรก</button>
+  <button onclick="location.href='New.html'">สินค้าใหม่</button>
+  <button onclick="location.href='List.html'">รายการสินค้า</button>
+  <button onclick="location.href='Promo.html'">โปรโมชั่น</button>
+  <button onclick="location.href='Order.html'">Order</button>
+</div>
+
+
+    <div class="main">
+      <h1>Product List</h1>
+
+
+
+
+
+     <img id="productImage" src="PD7.png" alt="ปากกาน่ารัก" width="250">
+<br><br>
+
+<button onclick="addToCart()">เพิ่มสินค้าลงตะกร้า</button>
+
+<h4 style="text-align: left; margin-left: 20px;">
+  ราคา
+  <span style="color: rgb(93, 92, 92);"> : 25 บาท🐱✨</span>
+</h4>
+
+<script>
+  function addToCart() {
+    // เก็บที่อยู่ของรูปภาพไว้ใน localStorage
+    const image = document.getElementById("productImage").src;
+    const message = "สินค้าที่ 7 : กบเหลาน้องแมวราคา : 25 บาท🐱✨"; // ✅ เพิ่มข้อความ
+
+    localStorage.setItem("cartImage", image); // บันทึกรูปไว้ก่อน
+    localStorage.setItem("cartMessage", message);
+    
+
+    alert("เพิ่มสินค้าลงตะกร้าแล้ว");
+
+    // เปลี่ยนหน้า
+    setTimeout(function () {
+      window.location.href = "Order.html"; // ไปหน้าตะกร้า
+    }, 100);
+  }
+</script>
+<br><br>
+
+
+   
+
+
+
+
+      <h4 style="text-align: left; margin-left: 20px;">
+  สี :
+        <p style="color: rgb(93, 92, 92); padding-left: 30px;">💜 ม่วงลาเวนเดอร์</p>
+    <p style="color: rgb(93, 92, 92); padding-left: 30px;">🩷 ชมพู</p>
+    <p style="color: rgb(93, 92, 92); padding-left: 30px;">💛 เหลืองมะนาว</p>
+    <p style="color: rgb(93, 92, 92); padding-left: 30px;">💚 เขียวมิ้นต์</p>
+    <p style="color: rgb(93, 92, 92); padding-left: 30px;">🩵 ฟ้าเบบี้บลู</p>
+    <p style="color: rgb(93, 92, 92); padding-left: 30px;">🧡 ส้มพีช</p>
+</h4>
+
+<br><br>
+
+<h4 style="text-align: left; margin-left: 120px;">
+  ✨ รายละเอียดสินค้า ✨
+</h4>
+<br><br>
+      <h4 style="text-align: left; margin-left: 20px;">
+  ✅ ดีไซน์รูปแมวสุดน่ารัก
+</h4>
+    <h4 style="text-align: left; margin-left: 20px;">
+  ✅ ใบมีดคม เหลาง่าย
+</h4>
+    <h4 style="text-align: left; margin-left: 20px;">
+  ✅ ฝาปิดป้องกันเศษไม้ ไม่หกเลอะเทอะ
+</h4>
+    
+ </div>
+  </div>
+    </div>
+  </div>
+
+  <footer>
+    ติดต่อ: Study Sparle | Email: Study_Sparle@gmail.com | โทร: 065-081-8940
+  </footer>
+
+</body>
+</html>
